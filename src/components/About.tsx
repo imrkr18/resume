@@ -63,7 +63,7 @@ const About: React.FC = () => {
               <User className="h-10 w-10 text-tech-blue mb-4" />
               <h3 className="text-xl font-bold mb-2">Problem Solver</h3>
               <p className="text-gray-600">
-                Solved 450+ problems across different competitive programming platforms.
+                Solved 550+ problems across different competitive programming platforms.
               </p>
             </div>
             

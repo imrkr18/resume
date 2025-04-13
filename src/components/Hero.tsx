@@ -5,7 +5,7 @@ import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative bg-gradient-to-br from-white to-gray-50 pt-16">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/a591bb4b-59fc-490e-a761-93797bdf626d.png')] bg-cover bg-center opacity-10 z-0"></div>
+      <div className="absolute inset-0 bg-[url('/DSC_3260.jpg')] bg-cover bg-center opacity-10 z-0"></div>
       
       <div className="container mx-auto px-6 z-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                 <Linkedin />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/imrkr18" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-700 hover:text-tech-blue transition-colors"

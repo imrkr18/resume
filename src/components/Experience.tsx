@@ -16,7 +16,7 @@ const Experience: React.FC = () => {
         'Mobile API Integration: Delivered robust Mobile API support, facilitating seamless and efficient integration between mobile applications and backend systems, ensuring consistent user experiences across platforms.',
         'Played a pivotal role in guiding the successful launch of a pioneering product.'
       ],
-      technologies: ['ASP.NET Web API', 'ASP.NET MVC', '.NET Core 6', 'JavaScript', 'SQL', 'Entity Framework', 'jQuery']
+      technologies: ['.NET Core 6/8', 'ASP.NET Web API', 'ASP.NET MVC', 'JavaScript', 'MSSQL', 'Entity Framework', 'jQuery', 'HTML5']
     },
     {
       title: 'Software Developer - Intern',
@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
         'Contributed to the Wrap Portal 6 by enhancing the Action Item Module, collaborating effectively with the team to meet deliverables.',
         'Worked across two products, Wrap Portal and Anzenn, acquiring insights into product development and lifecycle management.'
       ],
-      technologies: ['JavaScript', 'ASP.NET MVC', 'jQuery', 'SQL', '.NET Core 6', 'ASP.NET Web API']
+      technologies: ['JavaScript', 'ASP.NET MVC', 'jQuery', 'SQL', '.NET Core 6', 'ASP.NET Web API', 'Angular', 'TypeScript']
     }
   ];
 

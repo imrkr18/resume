@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       period: 'Jul 2023',
       association: 'Associated with Ahmedabad University',
       description: 'TrackCrypto, a comprehensive platform that allows users to search for cryptocurrencies globally and access vital market data like rank, market cap, current price, charts, and 24-hour changes. TrackCrypto also keeps users informed with the latest, crucial cryptocurrency news. Perfect for anyone looking to stay on top of the crypto world!',
-      github: 'https://github.com',
+      github: 'https://github.com/imrkr18/trackCrypto',
       technologies: ['Front-End Development', 'JavaScript', 'ReactJS', 'REST APIs'],
       image: '/lovable-uploads/2260f139-43f7-42f1-98a8-56d3403e04aa.png'
     },
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
       title: 'CordIT-Messenger',
       period: 'Apr 2022',
       description: 'A real-time chat application using the MERN stack (MongoDB, Express, React, Node.js) and Firebase. Users can easily sign up or sign in to start chatting instantly. Using Firebase\'s real-time database ensures seamless message delivery, providing a responsive and engaging user experience.',
-      github: 'https://github.com',
+      github: 'https://github.com/imrkr18/cordit-messenger',
       technologies: ['JavaScript', 'ReactJS', 'Firebase', 'HTML', 'CSS'],
       image: null
     }

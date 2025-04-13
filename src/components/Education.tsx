@@ -79,7 +79,7 @@ const Education: React.FC = () => {
     {
       title: 'Competitive Programming',
       items: [
-        'Solved more than 450+ Problems across different platform (Leetcode, GFG, Code Chef, Hacker Rank)'
+        'Solved more than 550+ Problems across different platform (Leetcode, GFG, Code Chef, Hacker Rank)'
       ]
     }
   ];
