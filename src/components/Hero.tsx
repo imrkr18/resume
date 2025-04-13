@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-tech-blue shadow-lg">
               <img 
-                src="/lovable-uploads/d1e3f7bd-d05d-4e7b-8c8d-64a7b6eb5ff0.png" 
+                src="/picture-uploads/DSC_3260.jpg" 
                 alt="Kuldeep Gohel" 
                 className="w-full h-full object-cover"
               />

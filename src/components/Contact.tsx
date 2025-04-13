@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(3);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,19 +19,44 @@ const Contact: React.FC = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset success message after 3 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 3000);
-    }, 1000);
+    fetch('https://formspree.io/f/mnqkzjwv', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }),
+        })
+      .then(response => {
+        if (!response.ok) {
+          //console.log(response);
+          setSubmitSuccess(2);
+          setIsSubmitting(false);
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(() => {
+        setIsSubmitting(false);
+        setSubmitSuccess(1);
+        setFormData({ name: '', email: '', message: '' });
+
+        // Reset success message after 3 seconds
+        setTimeout(() => {
+          setSubmitSuccess(3);
+        }, 3000);
+      })
+      .catch(error => {
+        setIsSubmitting(false);
+        setSubmitSuccess(2);
+        //console.error(error);
+        //setFormData({ name: '', email: '', message: '' });
+
+      });
   };
 
   return (
@@ -145,9 +170,14 @@ const Contact: React.FC = () => {
                 )}
               </button>
               
-              {submitSuccess && (
+              {submitSuccess === 1 && (
                 <p className="mt-4 text-green-600 font-medium">
                   Message sent successfully! I'll get back to you soon.
+                </p>
+              )}
+              {submitSuccess  === 2 && (
+                <p className="mt-4 text-green-600 font-medium">
+                  There's some issue in sending the mail. You can directly contact me on Phone or Email.
                 </p>
               )}
             </form>

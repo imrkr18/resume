@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       description: 'TrackCrypto, a comprehensive platform that allows users to search for cryptocurrencies globally and access vital market data like rank, market cap, current price, charts, and 24-hour changes. TrackCrypto also keeps users informed with the latest, crucial cryptocurrency news. Perfect for anyone looking to stay on top of the crypto world!',
       github: 'https://github.com/imrkr18/trackCrypto',
       technologies: ['Front-End Development', 'JavaScript', 'ReactJS', 'REST APIs'],
-      image: '/lovable-uploads/2260f139-43f7-42f1-98a8-56d3403e04aa.png'
+      image: null
     },
     {
       title: 'CordIT-Messenger',
@@ -99,8 +99,24 @@ const Projects: React.FC = () => {
                         </li>
                       )).slice(0, 2)}
                       {project.modules.length > 2 && (
-                        <li className="text-tech-purple font-medium">+ {project.modules.length - 2} more features</li>
-                      )}
+                      <li
+                        className="text-tech-purple font-medium cursor-pointer"
+                        onClick={(e) => {
+                          const parent = e.currentTarget.parentElement;
+                          if (parent) {
+                            parent.querySelectorAll('li.hidden').forEach((li) => li.classList.remove('hidden'));
+                            e.currentTarget.remove();
+                          }
+                        }}
+                      >
+                        + {project.modules.length - 2} more features
+                      </li>
+                    )}
+                    {project.modules.slice(2).map((module, i) => (
+                      <li key={i} className="mb-2 hidden">
+                        <span className="font-medium">{module.title}</span>: {module.description}
+                      </li>
+                    ))} 
                     </ul>
                   </div>
                 )}
