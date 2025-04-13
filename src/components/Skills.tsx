@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
     },
     {
       title: 'Frameworks',
-      skills: ['.NET', '.Net Core', 'ReactJS', 'NodeJS', 'Angular', 'ASP.NET MVC', 'ASP.NET Web API', 'Entity Framework']
+      skills: ['.NET', '.Net Core', 'ReactJS', 'NodeJS', 'Angular', 'Angular CLI', 'ASP.NET MVC', 'ASP.NET Web API', 'Entity Framework']
     },
     {
       title: 'Databases',
