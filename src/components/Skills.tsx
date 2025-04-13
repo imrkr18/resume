@@ -5,7 +5,7 @@ const Skills: React.FC = () => {
   const skillsCategories = [
     {
       title: 'Programming Languages',
-      skills: ['C/C++', 'C#', 'JavaScript', '.Net', 'Python', 'Java', 'SQL', 'TypeScript']
+      skills: ['C/C++', 'C#', 'JavaScript', '.Net', 'Python', 'Java', 'SQL', 'TypeScript', 'LINQ']
     },
     {
       title: 'Web Technologies',
@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
     },
     {
       title: 'Frameworks',
-      skills: ['.NET', '.Net Core', 'ReactJS', 'NodeJS', 'Angular', 'Angular CLI', 'ASP.NET MVC', 'ASP.NET Web API', 'Entity Framework']
+      skills: ['.NET', '.Net Core', 'ReactJS', 'NodeJS', 'Angular', 'Angular CLI', 'ASP.NET MVC', 'ASP.NET Web API', 'ASP.NET Core', 'Entity Framework']
     },
     {
       title: 'Databases',
