@@ -21,15 +21,19 @@ const Skills: React.FC = () => {
     },
     {
       title: 'Version Control Tools',
-      skills: ['Git', 'GitHub']
+      skills: ['Git', 'GitHub', 'Branching', 'Merging', 'Code Reviews', 'Version Management']
     },
     {
       title: 'Development Tools',
-      skills: ['Visual Studio Code', 'Visual Studio', 'Figma', 'Adobe', 'Jupyter Notebook']
+      skills: ['Visual Studio Code', 'Visual Studio', 'Figma', 'Adobe', 'Jupyter Notebook', 'SQL Server Management Studio']
     },
     {
       title: 'Soft Skills',
       skills: ['Problem Solving', 'Team Management', 'Communication', 'Teamwork', 'Creative Problem Solving', 'Leadership', 'Time Management', 'Adaptability', 'Critical Thinking', 'Attention to Detail']
+    },
+    {
+      title: 'Cloud & Deployment',
+      skills: ['Azure', 'Azure Blob Storage', 'CI/CD', 'RESTful APIs']
     }
   ];
 
