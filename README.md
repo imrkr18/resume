@@ -2,4 +2,4 @@
 
 ## Project info
 
-**URL**: https://imrkr18.github.io/virtual-resume/
+**URL**: https://imrkr18.github.io/resume/
