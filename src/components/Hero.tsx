@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
             <div className="flex mt-8 space-x-4 justify-center md:justify-start">
               <a 
-                href="https://linkedin.com/in/kuldigpohil06" 
+                href="https://www.linkedin.com/in/kuldipgohil06/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-700 hover:text-tech-blue transition-colors"
