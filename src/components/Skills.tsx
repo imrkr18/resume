@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
     },
     {
       title: 'Databases',
-      skills: ['MySQL', 'Microsoft SQL Server', 'MongoDB', 'Azure SQL']
+      skills: ['MySQL', 'Microsoft SQL Server', 'MongoDB', 'Azure SQL', 'Data Modeling', 'Data Architecture']
     },
     {
       title: 'Version Control Tools',
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
     },
     {
       title: 'Soft Skills',
-      skills: ['Problem Solving', 'Team Management', 'Communication', 'Teamwork', 'Creative Problem Solving', 'Data Modeling', 'Data Architecture']
+      skills: ['Problem Solving', 'Team Management', 'Communication', 'Teamwork', 'Creative Problem Solving', 'Leadership', 'Time Management', 'Adaptability', 'Critical Thinking', 'Attention to Detail']
     }
   ];
 
