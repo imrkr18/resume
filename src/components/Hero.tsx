@@ -5,7 +5,7 @@ import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative bg-gradient-to-br from-white to-gray-50 pt-16">
-      <div className="absolute inset-0 bg-[url('/DSC_3260.jpg')] bg-cover bg-center opacity-10 z-0"></div>
+      <div className="absolute inset-0 bg-[url('./picture_uploades/DSC_3260.jpg')] bg-cover bg-center opacity-10 z-0"></div>
       
       <div className="container mx-auto px-6 z-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-tech-blue shadow-lg">
               <img 
-                src="/picture-uploads/DSC_3260.jpg" 
+                src="./picture-uploads/DSC_3260.jpg" 
                 alt="Kuldeep Gohel" 
                 className="w-full h-full object-cover"
               />
