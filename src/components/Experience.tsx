@@ -5,6 +5,19 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
+      title: 'Software Engineer',
+      company: 'Positiwise Infotech Pvt Ltd',
+      location: 'Ahmedabad, Gujarat, India',
+      period: 'Sep 2025 - Present',
+      description: [
+        "Migrated company's central REST API from .NET Framework to .NET Core within 2 weeks, serving as the backbone for all product lines across the organization.",
+        "Optimized API performance to handle 12,000+ requests/minute through architectural improvements, efficient data access patterns, and robust memory management.",
+        "Reduced memory consumption by 85% during peak loads through comprehensive code refactoring and proper resource disposal mechanisms ensuring 99.9% uptime and reliability for all dependent products.",
+        "Improved API response time by 60% by restructuring data access layers, optimizing database queries, and implementing caching strategies."
+      ],
+      technologies: ['.NET Core', '.NET Framework', 'C#', 'SQL', 'Dapper', 'Dependency Injection', 'RESTful API', 'Performance Optimization']
+    },
+    {
       title: 'Software Developer I',
       company: 'Injala',
       location: 'Ahmedabad, Gujarat, India',
